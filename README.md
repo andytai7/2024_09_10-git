@@ -22,3 +22,5 @@ git restore --staged <file>
 git diff --staged <file>
 
 REMOTE CHANGE
+
+Local change 
