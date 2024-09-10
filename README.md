@@ -18,3 +18,5 @@ git diff <file>: shows the differences between the working driecting and the sta
 git restore --staged <file>
 
 git diff --staged <file>
+
+REMOTE CHANGE
