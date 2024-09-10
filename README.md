@@ -24,3 +24,4 @@ git diff --staged <file>
 REMOTE CHANGE
 
 Local change 
+REMOTE CHANGE 
