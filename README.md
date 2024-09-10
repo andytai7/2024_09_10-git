@@ -1,30 +1,31 @@
 # 2024_09_10-git
 
-LOCAL CHANGE 
+### Setting Up a New Repository
+- **`git init`**: Initializes a new Git repository in the current directory.
+- **`git remote add origin <remote_url>`**: Adds a remote repository called `origin` with the specified URL.
+- **`git branch -M main`**: Renames the current branch to `main`.
+- **`git push -u origin main`**: Pushes the `main` branch to the remote repository and sets it as the default upstream branch.
 
-##Setting up a new repository locally and linking it with github
-git init; initlaizes a new git repository in the current directory 
+### Working with Changes
+- **`git restore <file>`**: Restores the specified file to the last committed state in the working directory.
+- **`git restore --staged <file>`**: Unstages a file, moving it back from the staging area to the working directory.
 
-git remote add oring <remote_url>: adds a remote repository called orign with the sepcfiiced URL 
+### Viewing Differences
+- **`git diff <file>`**: Shows the differences between the working directory and the staging area for the specified file.
+- **`git diff --staged <file>`**: Displays changes that have been staged but not yet committed.
 
-git branch -M main: renames the curren branch to main
+### Viewing the Commit History
+- **`git log --oneline`**: Displays the commit history in a simplified, one-line-per-commit format.
+    - Press `q` to exit the log if it overflows the screen.
 
-git push origin main: pushes the main branch to the remote repsoitoyr 
+### Undoing Changes
+- **`git restore --source <hash> <file>`**: Restores a specific version of a file from a previous commit using its commit hash.
 
-##Working with changes on Git
+### Managing Merges
+- **`git config pull.rebase false`**: Ensures that `git pull` uses merge instead of rebase.
+- **`git pull origin main`**: Fetches and merges changes from the `main` branch of the remote repository.
+- **`git merge --abort`**: Aborts an ongoing merge process if conflicts or issues arise.
 
-git restore <file>: Restores the sepcified file to the last commited state in the working directory 
-
-git diff <file>: shows the differences between the working driecting and the staging area for the specififed file 
-
-git restore --staged <file>
-
-git diff --staged <file>
-
-REMOTE CHANGE
-
-Local change 
-REMOTE CHANGE 
-
-REMOTE CHANGE 2
-LOCAL CHANGE 2
+### Stashing Changes
+- **`git stash`**: Saves the current changes in a temporary storage, allowing you to work on other tasks without committing them.
+- **`git stash pop`**: Applies the most recent stash and removes it from the stash list.
