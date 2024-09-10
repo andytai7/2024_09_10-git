@@ -1,5 +1,7 @@
 # 2024_09_10-git
 
+LOCAL CHANGE 
+
 ##Setting up a new repository locally and linking it with github
 git init; initlaizes a new git repository in the current directory 
 
